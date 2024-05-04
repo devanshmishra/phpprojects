@@ -34,6 +34,34 @@ $b+=$a;
 
 echo $b;
 
+// understanding about the array in php
+
+$array_class=array('student_name'=>'Devansh','student_age'=>27,'student_phone'=>array(8765945870,900580280,7007804183));
+
+
+echo '<pre>';
+print_r($array_class);
+
+echo '</pre>';
+
+
+print_r($array_class['student_name'] ."<br/>");
+print_r($array_class['student_age'] ."<br/>" );
+print_r($array_class['student_phone'][2] ."<br/>" );
+
+
+// array + loop concept
+$array_dish = array(
+
+  "chola bhature" => 300,
+  "idli sambhar"   => 400,
+  "pudi sabji" => 20,
+  "rice rjma" => 50,
+);
+
+foreach ($array_dish as $key => $value) {
+	 echo "The Price of the Dish ".$key." in whole india is ".$value."<br/>";
+}
 
 
 ?>
